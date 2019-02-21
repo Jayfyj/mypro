@@ -1,0 +1,25 @@
+@charset "utf-8";
+.totop{
+	width: 50px;
+	height: 80px;
+	background: silver;
+	position: fixed;
+	right: 0;
+	left:1300px ;
+	top: 200px;
+	bottom: 0;
+	margin: auto;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 100px;
+	display: none;
+	border-radius:50px 50px 10px 10px ;
+	
+}
+
+/*.topbig10:hover{
+	cursor: pointer;
+	background: green;
+}*/

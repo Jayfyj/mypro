@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>快速登录</title>
+		<link rel="stylesheet" type="text/css" href="css/login1.css"/>
+		<link rel="shortcut icon" href="img/icon.ico" />
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#btn:hover,#btns:hover,#btnd:hover{
+				cursor: pointer;
+			}
+			#btn,#btns,#btnd{
+				color: white;
+				background: green;
+				outline: none;
+				font-size: 20px;
+				font-weight: 700;
+			}
+			
+			.big1>img:hover{
+				cursor: pointer;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="logo">
+				<img src="img/logo.png" />
+				<span>趣味登陆</span>
+			</div>
+			<div class="nav">
+				<img src="img/register.png" />
+				<div class="login">
+					<span>欢迎登录</span>
+					<span>还没有账号？<a href="register.html" style="color: green;">立即注册</a></span>
+					<input type=""  id="zhanghao" placeholder="请输入账号（电话号码）" /><span class="er">不存在账号</span>
+					<input type="button" id="btnd" value="大于等于登录" />
+					<input type="button" id="btns" value="少于等于登录" />
+					<input type="button" id="btn" value="对比后4位数" />
+					<div id="dot">
+						<div>0</div>
+						<div>0</div>
+						<div>0</div>
+						<div>0</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/interest.js"></script>
+		<script src="js/tools.js"></script>
+		
+	</body>
+</html>

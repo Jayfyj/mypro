@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/big.css"/>
+		<link rel="stylesheet" type="text/css" href="css/logo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopcar.css"/>
+		<link rel="shortcut icon" href="img/icon.ico" />
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background:#f7f8f8
+			}
+			.big2>img{
+				cursor: pointer;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="wellcome">
+				<span>欢迎光临易果生鲜！</span>
+				<a class="llo" href="login.html">[登录]</a>
+				<a href="register.html">[注册]</a>
+				<ul>
+					<li><span>我的易果</span>
+						<ul>
+							<li>我的订单</li>
+							<li>我的优惠券</li>
+							<li>我的收藏</li>
+							<li>我的悠币</li>
+							<li>我的退换货</li>
+							<li>预存款查询</li>
+							<li>立即充值</li>
+						</ul>
+					</li>
+					<li><span>手机易果</span>
+						<div >
+							<img src="img/erweima.jpg"/>
+						</div>
+							
+					</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<img src="img/logo.png"/>
+				<input type="text"  id="neirong" placeholder="输入商品名字" />
+				<ul class="listss">
+					
+				</ul>
+				<input type="button"  id="btnsuo" value="搜索" />
+				<div>
+					<div class="shop-div">
+					</div>
+					
+					<span class="geshu">0</span>
+				</div>
+			</div>
+			<div class="caidan-nav">
+				<div class="caidan">
+					<span>照片</span>
+					<span>送达地址</span>
+					<span>商品名称</span>
+					<span>总价（￥）</span>
+					<span>单价（￥）/份</span>
+					<span>操作</span>
+					
+					<div><input type="checkbox" name="" id="total" value="" />全选</div>
+					
+				</div>
+				
+				<ul class="shoplist">
+					<!--<li><!--<img src="img/shao111.jpg"/><span>12312312313123123123123123123</span>
+						<div class="btn">
+								<input class="ji" type="button" name=""value="-" />
+								<span class="kuang">0</span>
+								<input class="jia" type="button" name=""value="+" />
+								<input class="qing" type="button" name=""value="删除" />
+						</div>-->
+					
+				</ul>
+				<div class="accounts">
+					<span>全部总价：￥</span><i>0</i>
+					<input type="button" id="del" value="删除" />
+					<input type="button" id="buy" value="购买" />
+					<p>请选择购买商品,谢谢！</p>
+				</div>
+			</div>
+			
+		</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/tools.js"></script>
+		<script src="js/shopcarpoint.js"></script>
+		<script src="js/sousuokuang.js"></script>
+		<script>
+			//判断是否已经登录
+				if(localStorage.hasOwnProperty("true")){
+					$(".llo").text("欢迎"+localStorage.getItem("true")+"登录");
+					$(".llo").removeAttr("href");
+					$(".wellcome>.llo")[0].style.left="670px";
+					$(".wellcome>.llo")[0].style.color="green";
+					//可以跳转购物车页面
+					$(".logo>div").on("click",function(){
+						location.href="shopcar.html";
+					})
+					//获取储存数据，进行显示
+					if(localStorage.hasOwnProperty("ge")&&localStorage.key(i).split("=")[2]==localStorage.getItem("true")){
+						$(".geshu").text(localStorage.getItem("ge"));
+					}
+					$(".logo>img").on("click",function(){
+						location.href="index.html";
+					})
+					
+					$(".llo").on("mouseenter",function(){
+						$(this).text("点击退出");
+					});
+					
+					$(".llo").on("mouseleave",function(){
+						$(".llo").text("欢迎"+localStorage.getItem("true")+"登录");
+					});
+					
+					//退出账号
+					$(".llo").on("click",function(){
+						location.href="index.html";
+						localStorage.removeItem("true");
+//						localStorage.removeItem("ge");
+					});
+					
+					
+				}
+				else{
+					//显示登录提示
+					$(".logo>div").on("mouseenter",function(){
+						$(".shop").css("display","block");
+					})
+				}
+					$(".logo>div").on("mouseleave",function(){
+						$(".shop").css("display","none");
+				})
+		</script>
+	</body>
+</html>
+
+
+						

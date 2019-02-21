@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登陆注册</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="shortcut icon" href="img/icon.ico" />
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#btn:hover{
+				cursor: pointer;
+			}
+			.big1>img:hover{
+				cursor: pointer;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="logo">
+				<img src="img/logo.png" />
+				<span>注册</span>
+			</div>
+			<div class="nav">
+				<img src="img/register.png" />
+				<div class="login">
+					<span>欢迎注册</span>
+					<span>我已经注册，现在就 <a href="login.html" style="color: green;">登录</a></span>
+					<input type=""  id="zhanghao" placeholder="请输入账号（电话号码）" /><span class="er">请输入正确电话</span>
+					<input type="password" id="mima" placeholder="请输入密码" /><span class="er">密码格式长度为6-20数字或字母</span>
+					<input type="" id="yanzhengma" placeholder="验证码" /><span class="er">请输入正确验证码</span>
+					<input type="button" id="btn" value="注册" />
+					<div>
+						<img id="erweima" src=""/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/yanzhengma.js"></script>
+		<script src="js/zhuche.js"></script>
+		<script src="js/tools.js"></script>
+	</body>
+</html>

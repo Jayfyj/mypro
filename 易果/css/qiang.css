@@ -1,0 +1,78 @@
+@charset "utf-8";
+.qiang{
+	width: 1200px;
+	height: 200px;
+	/*background: pink;*/
+	margin:10px auto 0;
+	position: relative;
+	 /*background: radial-gradient(white 50%,green 100%);*/
+	/*border-radius:10px ;*/
+	overflow: hidden;
+	background: url(../img/tbgimg.jpg) 0 0  no-repeat;
+	background-size:100% 100%;
+}
+
+.qiang>div{
+	position: absolute;
+	top:0px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 500px;
+	height: 120px;
+	/*background: yellow;*/
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	
+}
+
+.qiang>div>span{
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	position: relative;
+	line-height: 120px;
+	font-size: 48px;
+	text-align: center;
+	font-weight: 700;
+	border-radius:50% ;
+	
+}
+
+.qiang>div>span::after{
+	content: ":";
+	display: block;
+	width: 15px;
+	height: 120px;
+	position: absolute;
+	top: -15px;
+	left: 145px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	font-size: 60px;
+	font-weight: 700;
+/*	background: red;*/
+	line-height: 120px;
+	
+}
+
+.qiang>span{
+	display: inline-block;
+	width: 500px;
+	height: 30px;
+	position: absolute;
+	top:-160px;
+	left: 0px;
+	right:-1500px;
+	bottom: 0;
+	margin: auto;
+	/*background: red;*/
+	line-height: 30px;
+	font-size: 24px;
+	text-align: center;
+	font-weight: 700;
+
+}

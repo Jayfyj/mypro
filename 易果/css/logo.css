@@ -1,0 +1,220 @@
+@charset "utf-8";
+.logo{
+	width: 1345px;
+	height: 70px;
+	background: silver;
+	position: relative;
+}
+
+.logo>img{
+	position: absolute;
+	top: 10px;
+	left: 80px;
+	
+}
+
+.logo>img:hover{
+	cursor: pointer;
+}
+
+.logo>input:nth-of-type(1){
+	position: absolute;
+	top: 0px;
+	left:0px;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 300px;
+	height: 30px;
+	text-indent: 0.5em;
+}
+.logo>input:nth-of-type(2){
+	position: absolute;
+	top: 0px;
+	left:350px;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 60px;
+	height: 34px;
+	outline: none;
+	border: none;
+	color: white;
+	background: green;
+	font-weight: 700px;
+	
+}
+
+.logo>div{
+	width: 260px;
+	height: 50px;
+	background: white;
+	position: absolute;
+	top: 0px;
+	left:-50px;
+	bottom:0 ;
+	right: -1000px;
+	margin: auto;
+	
+}
+
+.shop-div{
+	position: absolute;
+	top: 0;
+	left: 50px;
+	right: 0;
+	bottom:0;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+	background: url(../img/header-img.png) -110px 5px no-repeat;
+}
+
+
+
+
+.logo>div>span{
+	position: absolute;
+	top: 10px;
+	left: 105px;
+	color: green;
+	font-size: 20px;
+}
+
+.logo>div:hover{
+	cursor: pointer;
+}
+
+.shop{
+	width: 300px;
+	height: 150px;
+	background: white;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	z-index: 10;
+	line-height: 85px;
+	text-align: center;
+	color: green;
+	font-size: 30px;
+	font-weight: 700;
+	display: none;
+}
+
+.logo>.listss{
+	list-style: none;
+	position: absolute;
+	top: 52px;
+	left: -5px;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	z-index: 10;
+	width: 295px;
+}
+
+.logo>.listss>li{
+	background: white;
+	padding-left: 10px;
+	padding-top: 5px;
+	
+	
+}
+
+
+.logo>.listss>li>a{
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 700;
+	color: black;
+}
+
+
+.listsss{
+	position: absolute;
+	width: 260px;
+	background: white;
+	z-index: 10;
+	list-style: none;
+	top: 50px;
+	display: none;
+	/*height: 225px;
+	overflow:auto;*/
+	
+}
+
+.listsss>li{
+	display: inline-block;
+	width: 260px;
+	height: 45px;
+	position: relative;
+	border-bottom: 1px solid silver;
+}
+
+.listsss>li>span{
+	position: absolute;
+	top: 15px;
+	left: 45px;
+	font-size:12px;
+	font-weight: 700;
+	white-space:nowrap;/*强制不换行*/
+	overflow:hidden;/*超出部分隐藏*/
+	text-overflow:ellipsis;/*让超出的文本以省略号的形式显示*/
+	width: 150px;
+	
+}
+
+/***送至地址***/
+.listsss>li>i{
+	position: absolute;
+	top: 15px;
+	left: 105px;
+	font-size:12px;
+	font-weight: 700;
+	font-style: normal;
+	white-space:nowrap;/*强制不换行*/
+	overflow:hidden;/*超出部分隐藏*/
+	text-overflow:ellipsis;/*让超出的文本以省略号的形式显示*/
+	width: 150px;
+	
+	
+}
+
+.listsss>li>img{
+	width: 40px;
+	height: 40px;
+	
+}
+
+.listsss>li>div{
+	position: absolute;
+	top: 0;
+	left: -100px;
+	background: rgba(0,0,0,.5);
+	width: 100px;
+	height: 45px;
+	border-radius:5px 0 0 5px ;
+}
+
+
+.listsss>li>div>input{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+
+.listsss>li>div>input:nth-child(1){
+	left: 0px;
+}
+
+.listsss>li>div>input:nth-child(2){
+	left: 30px;
+}
+
+.listsss>li>div>input:nth-child(3){
+	width: 40px;
+	left: 60px;
+	
+}

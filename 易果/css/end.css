@@ -1,0 +1,138 @@
+@charset "utf-8";
+.end{
+	width: 1200px;
+	height: 400px;
+	/*background: pink;*/
+	margin: 10px auto;
+}
+
+.end1{
+	width: 1200px;
+	height: 100px;
+	background: silver;
+	
+}
+
+.end1>ul{
+	list-style: none;
+}
+
+.end1>ul>li{
+	float: left;
+	margin-top: 30px;
+	margin-left: 130px;
+}
+.end1>ul>li>span>p:nth-child(1){
+	color: green;
+	font-size: 20px;
+}
+
+.end1>ul>li>span{
+	position: relative;
+}
+
+.end1>ul>li>span::after{
+	position: absolute;
+	content: '';
+	display: block;
+	width: 42px;
+	height: 42px;
+	background: url(../img/footer_service_icon.png) 0px 0px no-repeat;
+	top: -45px;
+	left: -55px;
+}
+
+.end1>ul>li:nth-child(2)>span::after{
+	background: url(../img/footer_service_icon.png) 0px -42px no-repeat;
+}
+
+.end1>ul>li:nth-child(3)>span::after{
+	background: url(../img/footer_service_icon.png) 0px -84px no-repeat;
+}
+
+.end1>ul>li:nth-child(4)>span::after{
+	background: url(../img/footer_service_icon.png) 0px -125px no-repeat;
+}
+
+.end2{
+	width: 1200px;
+	height: 220px;
+	/*background: red;*/
+}
+
+
+.end2 ul{
+	list-style: none;
+}
+
+.end2>ul>li{
+	float: left;
+	margin-left: 100px;
+	margin-top: 20px;
+
+	
+}
+
+.end2>ul>li>span{
+	font-size:20px ;
+	margin-bottom: 10px;
+	color: green;
+	padding-left: 20px;
+	position: relative;
+}
+
+.end2>ul>li>span::after{
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	left: -15px;
+	background: url(../img/footer_icon.png) 0px 6px no-repeat;
+	content: '';
+}
+
+.end2>ul>li:nth-child(2)>span::after{
+	height: 24px;
+	background: url(../img/footer_icon.png) 0px -22px no-repeat;
+}
+
+.end2>ul>li:nth-child(3)>span::after{
+	height: 24px;
+	background: url(../img/footer_icon.png) 0px -45px no-repeat;
+}
+
+.end2>ul>li:nth-child(4)>span::after{
+	height: 24px;
+	background: url(../img/footer_icon.png) 0px -69px no-repeat;
+}
+
+.end2>ul>li:nth-child(5)>span::after{
+	height: 24px;
+	background: url(../img/footer_icon.png) 0px -92px no-repeat;
+}
+
+
+.end2>ul>li>ul{
+	padding-left: 40px;
+	border-left:1px dotted silver ;
+	margin-top: 10px;
+}
+
+.end2>ul>li>ul>li{
+	margin-bottom: 5px;
+}
+
+.end2>ul>li>ul>li:hover{
+	cursor: pointer;
+	text-decoration: underline;
+	color: green;
+}
+
+
+.end3>p{
+	
+	text-align: center;
+	line-height: 80px;
+	color: green;
+}

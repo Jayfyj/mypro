@@ -1,0 +1,55 @@
+@charset "utf-8";
+.sidebar{
+	width: 50px;
+	height: 300px;
+	/*background: green;*/
+	position: fixed;
+	top: 200px;
+	left: 0;
+	display: none;
+}
+
+.sidebar>div{
+	width: 50px;
+	height: 50px;
+	border: 1px solid silver;
+	border-bottom:none ;
+	background: url(../img/floor_guide.png) 5px 0px no-repeat;
+	
+}
+
+.sidebar>div:nth-child(2){
+	background: url(../img/floor_guide.png) -35px 0px no-repeat;
+}
+
+.sidebar>div:nth-child(3){
+	background: url(../img/floor_guide.png) -156px 0px no-repeat;
+}
+.sidebar>div:nth-child(4){
+	background: url(../img/floor_guide.png) -76px 0px no-repeat;
+}
+
+.sidebar>div:nth-child(5){
+	background: url(../img/floor_guide.png) -116px 0px no-repeat;
+}
+
+.sidebar>div:nth-child(6){
+	border-bottom:1px solid silver;
+	background: url(../img/floor_guide.png) -195px 0px no-repeat;
+}
+.sidebar>div>div{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	font-weight: 700px;
+	background: green;
+	opacity: 0;
+	transition: 0.5s;
+	
+}
+.sidebar>div>div:hover{
+	opacity: 1;
+	cursor: pointer;
+}
